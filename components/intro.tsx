@@ -47,18 +47,18 @@ export default function Intro() {
             <span className="font-bold">Olá, você.</span> Me chamo <span className="font-bold">Lucas</span>, tenho 22 anos, sou <span className="font-bold">Desenvolvedor Front-End</span> e graduando em <span className="font-bold">Ciência da Computação</span> pela <span className="font-bold">UFAL</span>. Apaixonado por <span className="italic">web & UI/UX</span>.
         </motion.p>
 
-        <motion.div className='flex flex-col gap-3 justify-center sm:flex-row px-4 text-lg font-medium'
+        <motion.div className='flex flex-row gap-4 justify-center align-center flex-wrap px-4 text-lg font-medium'
         initial={{ opacity: 0, y: 150 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6}}
+        transition={{ delay: 0.7}}
         >
-            <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'>Entre em contato <BsArrowUpRight className="opacity-70 group-hover:-translate-y-1 transition"/></Link>
+            <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 w-full rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition sm:w-fit'>Entre em contato <BsArrowUpRight className="opacity-70 group-hover:-translate-y-1 transition"/></Link>
 
-            <a href="#" className='group bg-white text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition'>Currículo <BsDownload className="opacity-70 group-hover:translate-y-1 transition"/></a>
+            <a href="/CV.pdf" download={true} className='group bg-white text-gray-950 px-7 py-3 flex items-center justify-center gap-2 w-full rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 sm:w-fit'>Currículo <BsDownload className="opacity-70 group-hover:translate-y-1 transition"/></a>
 
-            <a href="https://www.linkedin.com/in/lucas-chaves-881b6726b/" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem]"><BsLinkedin /></a>
+            <a href="https://www.linkedin.com/in/lucas-chaves-881b6726b/" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem] focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10"><BsLinkedin /></a>
 
-            <a href="https://github.com/lukeeplr" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem]"><BsGithub /></a>
+            <a href="https://github.com/lukeeplr" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem] focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10"><BsGithub /></a>
 
         </motion.div>
     </section>
