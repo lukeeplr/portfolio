@@ -1,14 +1,23 @@
 "use client"
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowUpRight, BsDownload, BsLinkedin, BsGithub} from 'react-icons/bs'
+import { useInView } from 'react-intersection-observer'
+import useActiveSectionContext from '@/hooks/use-active-section-context'
+import useScrollState from '@/hooks/use-scroll-state'
 
 export default function Intro() {
+
+  const { ref } = useScrollState({sectionName: 'Início', threshold: 0.75})
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section 
+    id='home'
+    ref={ref}
+    className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
         <div className="flex items-center justify-center">
             <div className='relative'>
                 <motion.div
