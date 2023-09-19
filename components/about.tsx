@@ -13,7 +13,7 @@ export default function About () {
   return (
     <motion.section 
     id='about'
-    className='text-center max-w-[45rem] mb-28 leading-8 sm:mb-40 scroll-mt-28'
+    className='text-center max-w-[45rem] leading-8'
     initial={{ opacity: 0, y: 150 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 1.1}}
