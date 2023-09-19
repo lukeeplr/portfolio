@@ -1,23 +1,23 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowUpRight, BsDownload, BsLinkedin, BsGithub} from 'react-icons/bs'
-import { useInView } from 'react-intersection-observer'
-import useActiveSectionContext from '@/hooks/use-active-section-context'
 import useScrollState from '@/hooks/use-scroll-state'
+import useActiveSectionContext from '@/hooks/use-active-section-context'
 
 export default function Intro() {
 
   const { ref } = useScrollState({sectionName: 'Início', threshold: 0.75})
+  const { setActiveSection, setClickTime } = useActiveSectionContext()
 
   return (
     <section 
     id='home'
     ref={ref}
-    className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+    className='max-w-[50rem] text-center scroll-mt-[100rem]'>
         <div className="flex items-center justify-center">
             <div className='relative'>
                 <motion.div
@@ -61,7 +61,12 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7}}
         >
-            <Link href="#contact" className='group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 w-full rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition sm:w-fit'>Entre em contato <BsArrowUpRight className="opacity-70 group-hover:-translate-y-1 transition"/></Link>
+            <Link href="#contact" 
+            onClick={() => {
+                setActiveSection('Contato')
+                setClickTime(Date.now())
+            }}
+            className='group bg-gray-900 text-white px-7 py-3 flex items-center justify-center gap-2 w-full rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition sm:w-fit'>Entre em contato <BsArrowUpRight className="opacity-70 group-hover:-translate-y-1 transition"/></Link>
 
             <a href="/CV.pdf" download={true} className='group bg-white text-gray-950 px-7 py-3 flex items-center justify-center gap-2 w-full rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 sm:w-fit'>Currículo <BsDownload className="opacity-70 group-hover:translate-y-1 transition"/></a>
 
