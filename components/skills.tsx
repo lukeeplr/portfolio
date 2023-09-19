@@ -15,7 +15,7 @@ export default function Skills() {
         opacity: 1,
         scale: 1,
         transition: {
-            delay: 0.05 * index,
+            delay: 0.075 * index,
             type: 'spring',
             stiffness: 400,
             damping: 18
@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <section
     id='skills'
-    className='scroll-mt-28 mt-28 sm:mt-40'
+    className='scroll-mt-28'
     ref={ref}>
         <SectionHeading>Habilidades</SectionHeading>
             <ul className='flex flex-wrap max-w-[40rem] sm:max-w-[53rem] gap-5 justify-center text-gray-800'>
