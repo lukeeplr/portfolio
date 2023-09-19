@@ -41,7 +41,7 @@ export default function Header() {
                                 transition={{
                                     type: "spring",
                                     stiffness: 300,
-                                    damping: 30
+                                    damping: 25
                                 }}
                                 ></motion.span>
                             )}
