@@ -9,7 +9,7 @@ import useScrollState from '@/hooks/use-scroll-state'
 
 export default function Projects() {
 
-  const { ref } = useScrollState({sectionName: "Projetos"})
+  const { ref } = useScrollState({sectionName: "Projetos", threshold: 0.3})
 
   return (
     <section ref={ref}
