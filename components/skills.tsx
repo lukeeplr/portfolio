@@ -29,11 +29,11 @@ export default function Skills() {
     className='scroll-mt-28'
     ref={ref}>
         <SectionHeading>Habilidades</SectionHeading>
-            <ul className='flex flex-wrap max-w-[40rem] sm:max-w-[53rem] gap-5 justify-center text-gray-800'>
+            <ul className='flex flex-wrap max-w-[40rem] sm:max-w-[53rem] gap-5 justify-center text-gray-800 dark:text-white/90'>
                 {skillsData.map((skill, index) => (
                     <motion.li 
                     key={skill}
-                    className='bg-gray-100 text-lg rounded-xl py-3 px-5 border border-black/10 shadow-md'
+                    className='bg-gray-100 text-lg rounded-xl py-3 px-5 border border-black/10 shadow-md dark:bg-white dark:bg-opacity-10'
                     variants={skillAnimation}
                     initial='intial'
                     whileInView='animate'
