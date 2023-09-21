@@ -20,9 +20,10 @@ export default function About () {
     ref={ref}
     >        
         <SectionHeading>sobre mim</SectionHeading>
-        <p className='mb-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo deserunt exercitationem cum, necessitatibus dignissimos cupiditate provident voluptatum at earum ullam sed deleniti. Eveniet architecto, recusandae accusamus illo ratione quaerat iure iste ipsa! Ea a, fuga nemo animi illum quae officiis magnam eum asperiores earum cum soluta.</p>
-        <p className="mb-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia omnis porro repudiandae consequatur debitis dolorem veniam neque facere quasi, ex itaque tempora. Voluptatibus quos alias doloribus molestiae.
+        <p className='mb-3 dark:text-white/90'>Me chamo <strong>Lucas</strong>, tenho 22 anos, sou <strong>brasileiro</strong>, nascido em Alagoas, atualmente cursando o 7º perído de <strong>Ciência da Computação</strong> pela <strong>Universidade Federal de Alagoas</strong> e atuo como <strong>Desenvolvedor Front-End</strong>.</p>
+        <p className="mb-3 dark:text-white/90">Meu primeiro contato com o mundo do desenvolvimento foi em 2018 com a programação web, trabalhando em uma start-up com foco em jogos online, que me influenciou a seguir o caminho atual. Logo após, em 2019, iniciei minha graduação em Ciência da Computação, expandi meus horizontes e nos dias de hoje estou atuando como Desenvolvedor Front-End autônomo.</p>
+        <p className="mb-3 dark:text-white/90">
+        Apaixonado por música, e-sports e design, sou ex-jogador profissional de Counter-Strike e guitarrista nas horas vagas, focado atualmente nos meus projetos pessoas, pelos quais tenho uma carinho gigantesco.
         </p>
     </motion.section>
   )
