@@ -121,6 +121,7 @@ export const skillsData = [
   "Python",
   "Django",
   "MySQL",
+  "MongoDB",
   "Figma",
   "Git",
 ] as const;
