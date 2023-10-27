@@ -8,6 +8,7 @@ import geinfraImg from "@/public/geinfra.png";
 import moviewImg from "@/public/moview.png";
 import portfolioImg from "@/public/portfolio.png";	
 import portfolionewImg from "@/public/portfolionew.png";	
+import threadsImg from "@/public/threads.png";
 
 export const links = [
   {
@@ -65,6 +66,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Threads",
+    description: "Uma aplicação web onde os usuários podem se registrar e interagir entre si através de postagens.",
+    tags: [ "HTML", "CSS", "TypeScript", "Next", "Tailwind", "MongoDB"],
+    imageUrl: threadsImg,
+    projectUrl: 'https://threadsbylukee.vercel.app/'
+  },
+  {
     title: "Moview",
     description: "Aplicação web focada na busca e visualização de informações sobre filmes e séries",
     tags: ["HTML", "CSS", "React", "TypeScript", "Styled Components"],
@@ -74,7 +82,7 @@ export const projectsData = [
   {
     title: "Portfolio",
     description:
-      "Uma landing page própria focada em apresentar quem sou, minhas habilidades, projetos e experiência profssional.",
+      "Uma landing page própria focada em apresentar quem sou, minhas habilidades, projetos e experiência profissional.",
     tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind", "Framer Motion"],
     imageUrl: portfolionewImg,
     projectUrl: 'https://lucas-chaves.vercel.app/'
