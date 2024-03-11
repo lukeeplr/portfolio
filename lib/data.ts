@@ -54,7 +54,7 @@ export const experiencesData = [
     date: "2022 - 2023",
   },
   {
-    title: "Desenvolvedor Front-End",
+    title: "Desenvolvedor Web",
     location: "Autônomo",
     description:
       "Uma experiência que me ensina muito sobre todas as etapas do desenvolvimento, desde a engenharia de requistos até a construção do produto final e implantação. O horário flexível é de grande ajuda para poder me dedicar mais aos projetos e aprender cada vez mais.",
