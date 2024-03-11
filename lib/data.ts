@@ -4,9 +4,8 @@ import { CgWorkAlt, CgCodeSlash } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 
 import forumImg from "@/public/forum.png";
-import geinfraImg from "@/public/geinfra.png";
 import moviewImg from "@/public/moview.png";
-import portfolioImg from "@/public/portfolio.png";	
+import travellerImg from "@/public/traveller.png";
 import portfolionewImg from "@/public/portfolionew.png";	
 import threadsImg from "@/public/threads.png";
 
@@ -67,10 +66,18 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Threads",
-    description: "Uma aplicação web onde os usuários podem se registrar e interagir entre si através de postagens.",
+    description: "O melhor lugar para compartilhar seu dia a dia, interagir com amigos e conhecer novas pessoas",
     tags: [ "HTML", "CSS", "TypeScript", "Next", "Tailwind", "MongoDB"],
     imageUrl: threadsImg,
     projectUrl: 'https://threadsbylukee.vercel.app/'
+  },
+  {
+    title: "Traveller",
+    description:
+      "Sem dor de cabeça com viagens. Anuncie e reserve casas e apartamentos com facilidade no Traveller",
+    tags: ["HTML", "CSS", "TypeScript", "Next", "Tailwind", "Prisma"],
+    imageUrl: travellerImg,
+    projectUrl: 'https://travellerbylukee.vercel.app/'
   },
   {
     title: "Moview",
@@ -88,14 +95,6 @@ export const projectsData = [
     projectUrl: 'https://lucas-chaves.vercel.app/'
   },
   {
-    title: "Portfolio",
-    description:
-      "Uma landing page própria focada em apresentar quem sou, minhas habilidades e projetos.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: portfolioImg,
-    projectUrl: 'https://old-portfolio-lucas-chaves.vercel.app/'
-  },
-  {
     title: "Fuzion Network",
     description:
       "Trabalhei em todas as etapas do desenvolvimento do fórum, site e loja virtual da rede de servidores.",
@@ -103,14 +102,6 @@ export const projectsData = [
     imageUrl: forumImg,
     projectUrl: '#projects'
   },
-  {
-    title: "GEINFRApp",
-    description:
-      "Uma aplicação web desenvolvida durante a graduação para auxiliar a equipe de infraestrutura da universidade.",
-    tags: ["HTML", "CSS", "JavaScript", "React"],
-    imageUrl: geinfraImg,
-    projectUrl: '#projects'
-  }
 ] as const;
 
 export const skillsData = [
@@ -130,6 +121,7 @@ export const skillsData = [
   "Django",
   "MySQL",
   "MongoDB",
+  "Prisma",
   "Figma",
   "Git",
 ] as const;
