@@ -1,12 +1,12 @@
 import React from "react";
 
-import { CgWorkAlt, CgCodeSlash } from "react-icons/cg";
+import { CgCodeSlash } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 
-import forumImg from "@/public/forum.png";
+import thebridge from "@/public/thebridge.png";
 import moviewImg from "@/public/moview.png";
 import travellerImg from "@/public/traveller.png";
-import portfolionewImg from "@/public/portfolionew.png";	
+import bali from "@/public/bali.png";
 import threadsImg from "@/public/threads.png";
 
 export const links = [
@@ -46,14 +46,6 @@ export const experiencesData = [
     date: "2019 - presente",
   },
   {
-    title: "Desenvolvedor Front-End",
-    location: "ITAN Labs",
-    description:
-      "Uma experiência extremamente enriquecedora e desafiadora. Durante esse período, tive a oportunidade de mergulhar profundamente no mundo do desenvolvimento, conhecer novas tecnologias, contribuir para projetos reais e trabalhar em uma equipe incrível.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
-  },
-  {
     title: "Desenvolvedor Web",
     location: "Autônomo",
     description:
@@ -80,27 +72,27 @@ export const projectsData = [
     projectUrl: 'https://travellerbylukee.vercel.app/'
   },
   {
+    title: "BALI Arquitetura",
+    description:
+      "Um website/ portfólio do escritório de arquitetura e urbanismo BALI que visa apresentar a empresa, sua equipe, seus projetos e mais.",
+    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind", "Framer Motion"],
+    imageUrl: bali,
+    projectUrl: 'https://baliarquitetura.com/'
+  },
+  {
+    title: "The Bridge",
+    description:
+      "Um website da equipe de desenvolvimento The Bridge,  focada em apresentar a empresa, seus projetos, abordagem e mais.",
+    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind"],
+    imageUrl: thebridge,
+    projectUrl: 'https://www.thebridgedev.com/'
+  },
+  {
     title: "Moview",
     description: "Aplicação web focada na busca e visualização de informações sobre filmes e séries",
     tags: ["HTML", "CSS", "React", "TypeScript", "Styled Components"],
     imageUrl: moviewImg,
     projectUrl: 'https://moview-flame.vercel.app/'
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Uma landing page própria focada em apresentar quem sou, minhas habilidades, projetos e experiência profissional.",
-    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind", "Framer Motion"],
-    imageUrl: portfolionewImg,
-    projectUrl: 'https://lucas-chaves.vercel.app/'
-  },
-  {
-    title: "Fuzion Network",
-    description:
-      "Trabalhei em todas as etapas do desenvolvimento do fórum, site e loja virtual da rede de servidores.",
-    tags: ["HTML", "CSS", "PHP", "MySQL"],
-    imageUrl: forumImg,
-    projectUrl: '#projects'
   },
 ] as const;
 
@@ -123,5 +115,6 @@ export const skillsData = [
   "MongoDB",
   "Prisma",
   "Figma",
+  "Web Design",
   "Git",
 ] as const;

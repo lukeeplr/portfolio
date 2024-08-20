@@ -14,7 +14,7 @@ export default function Intro() {
   const { setActiveSection, setClickTime } = useActiveSectionContext()
 
   return (
-    <section 
+    <section
     id='home'
     ref={ref}
     className='max-w-[50rem] text-center scroll-mt-[100rem]'>
@@ -25,7 +25,7 @@ export default function Intro() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type: "tween", duration: 0.2}}
                 >
-                <Image src="/pfp.jpg" 
+                <Image src="/pfp.jpg"
                 alt='Lucas Chaves'
                 width="192"
                 height="192"
@@ -34,11 +34,11 @@ export default function Intro() {
                 className='h-36 w-36 rounded-full border-[0.35rem] border-white object-cover shadow-xl '
                 />
                 </motion.div>
-            <motion.span 
+            <motion.span
             className='absolute bottom-0 right-0 text-4xl'
             initial={{ opacity: 0, scale: 0}}
             animate={{ opacity: 1, scale: 1}}
-            transition={{ 
+            transition={{
                 type: "spring",
                 stiffness: 125,
                 delay: 0.2,
@@ -53,7 +53,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4}}
         >
-            <span className="font-bold">Olá, você.</span> Me chamo <span className="font-bold">Lucas</span>, tenho 22 anos, sou <span className="font-bold">Desenvolvedor Web</span> e graduando em <span className="font-bold">Ciência da Computação</span> pela <span className="font-bold">UFAL</span>.
+            <span className="font-bold">Olá, você.</span> Me chamo <span className="font-bold">Lucas</span>, tenho 23 anos, sou <span className="font-bold">Desenvolvedor Web</span> e graduando em <span className="font-bold">Ciência da Computação</span> pela <span className="font-bold">UFAL</span>.
         </motion.h1>
 
         <motion.div className='flex flex-row gap-4 justify-center align-center flex-wrap px-4 text-lg font-medium'
@@ -61,7 +61,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7}}
         >
-            <Link href="#contact" 
+            <Link href="#contact"
             onClick={() => {
                 setActiveSection('Contato')
                 setClickTime(Date.now())
