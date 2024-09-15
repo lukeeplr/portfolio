@@ -4,7 +4,7 @@ import { CgCodeSlash } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 
 import thebridge from "@/public/thebridge.png";
-import moviewImg from "@/public/moview.png";
+import imaginify from "@/public/imaginify.png";
 import travellerImg from "@/public/traveller.png";
 import bali from "@/public/bali.png";
 import threadsImg from "@/public/threads.png";
@@ -57,6 +57,21 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Imaginify",
+    description: "Aplicação web SaaS que realiza edições de imagem usando Inteligência Artificial.",
+    tags: ["HTML", "CSS", "Next", "TypeScript", "MongoDB", "Stripe"],
+    imageUrl: imaginify,
+    projectUrl: 'https://imaginifybylukee.vercel.app/'
+  },
+  {
+    title: "BALI Arquitetura",
+    description:
+      "Um website/ portfólio do escritório de arquitetura e urbanismo BALI que visa apresentar a empresa, sua equipe, seus projetos e mais.",
+    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind", "Framer Motion"],
+    imageUrl: bali,
+    projectUrl: 'https://baliarquitetura.com/'
+  },
+  {
     title: "Threads",
     description: "O melhor lugar para compartilhar seu dia a dia, interagir com amigos e conhecer novas pessoas",
     tags: [ "HTML", "CSS", "TypeScript", "Next", "Tailwind", "MongoDB"],
@@ -72,27 +87,12 @@ export const projectsData = [
     projectUrl: 'https://travellerbylukee.vercel.app/'
   },
   {
-    title: "BALI Arquitetura",
-    description:
-      "Um website/ portfólio do escritório de arquitetura e urbanismo BALI que visa apresentar a empresa, sua equipe, seus projetos e mais.",
-    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind", "Framer Motion"],
-    imageUrl: bali,
-    projectUrl: 'https://baliarquitetura.com/'
-  },
-  {
     title: "The Bridge",
     description:
       "Um website da equipe de desenvolvimento The Bridge,  focada em apresentar a empresa, seus projetos, abordagem e mais.",
     tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind"],
     imageUrl: thebridge,
     projectUrl: 'https://www.thebridgedev.com/'
-  },
-  {
-    title: "Moview",
-    description: "Aplicação web focada na busca e visualização de informações sobre filmes e séries",
-    tags: ["HTML", "CSS", "React", "TypeScript", "Styled Components"],
-    imageUrl: moviewImg,
-    projectUrl: 'https://moview-flame.vercel.app/'
   },
 ] as const;
 
@@ -114,6 +114,7 @@ export const skillsData = [
   "MySQL",
   "MongoDB",
   "Prisma",
+  "Stripe",
   "Figma",
   "Web Design",
   "Git",
