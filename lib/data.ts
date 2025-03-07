@@ -72,6 +72,14 @@ export const projectsData = [
     projectUrl: 'https://baliarquitetura.com/'
   },
   {
+    title: "The Bridge",
+    description:
+      "Um website da equipe de desenvolvimento The Bridge,  focada em apresentar a empresa, seus projetos, abordagem e mais.",
+    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind"],
+    imageUrl: thebridge,
+    projectUrl: 'https://www.thebridgedev.com/'
+  },
+  {
     title: "Threads",
     description: "O melhor lugar para compartilhar seu dia a dia, interagir com amigos e conhecer novas pessoas",
     tags: [ "HTML", "CSS", "TypeScript", "Next", "Tailwind", "MongoDB"],
@@ -86,14 +94,7 @@ export const projectsData = [
     imageUrl: travellerImg,
     projectUrl: 'https://travellerbylukee.vercel.app/'
   },
-  {
-    title: "The Bridge",
-    description:
-      "Um website da equipe de desenvolvimento The Bridge,  focada em apresentar a empresa, seus projetos, abordagem e mais.",
-    tags: ["HTML", "CSS", "Next", "TypeScript", "Tailwind"],
-    imageUrl: thebridge,
-    projectUrl: 'https://www.thebridgedev.com/'
-  },
+
 ] as const;
 
 export const skillsData = [
@@ -107,6 +108,7 @@ export const skillsData = [
   "Tailwind",
   "Styled Components",
   "Framer Motion",
+  "GSAP",
   "Dart",
   "Flutter",
   "Python",
