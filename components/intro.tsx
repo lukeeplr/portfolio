@@ -70,7 +70,7 @@ export default function Intro() {
 
             <a href="/CV.pdf" download={true} className='group bg-white text-gray-950 px-7 py-3 flex items-center justify-center gap-2 w-full rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 sm:w-fit dark:bg-white dark:border-white/10 dark:bg-opacity-10 dark:text-white dark:hover:border-white/20'>Currículo <BsDownload className="opacity-70 group-hover:translate-y-1 transition"/></a>
 
-            <a href="https://www.linkedin.com/in/lucas-chaves-881b6726b/" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem] focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10 dark:bg-white dark:border-white/10 dark:text-white/70 dark:bg-opacity-10 dark:hover:text-white dark:hover:border-white/20"><BsLinkedin /></a>
+            <a href="https://www.linkedin.com/in/lucasapchaves/" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem] focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10 dark:bg-white dark:border-white/10 dark:text-white/70 dark:bg-opacity-10 dark:hover:text-white dark:hover:border-white/20"><BsLinkedin /></a>
 
             <a href="https://github.com/lukeeplr" target='_blank' className="bg-white text-gray-700 p-4 rounded-full flex items-center text-[1.35rem] focus:scale-110 hover:scale-[1.15] hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10 dark:bg-white/10 dark:border-white/10 dark:text-white/70 dark:hover:text-white dark:hover:border-white/20"><BsGithub /></a>
 
